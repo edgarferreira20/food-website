@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Montserrat", serif;
+    list-style: none;
+}
+:root{
+    --main-color: #ffea00;
+    --text-color: #fff;
+    --bg-color: #222222;
+}
+body{
+    background-color: var(--text-color);
+}
+section, 
+footer{
+    padding: 54px 0;
+}
+.banner-text h3{
+    color: var(--text-color);
+    font-size: 96px;
+    font-family: "Abril Fatface", serif;
+    font-weight: lighter;
+    margin-top: 171px;
+}
+p{
+    color: var(--text-color);
+}
+a{
+    color: var(--text-color);
+    font-weight: 700;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.btn{
+    font-size: 20px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: var(--main-color);
+}
+
+header{
+    background-image: url('assets/section2.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    background-color: var(--text-color);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+nav ul a{
+    color: black;
+    margin: 0 50px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+nav ul i{
+    text-transform: capitalize;
+    font-size: 150px;
+}
+nav img{
+    height: 70px;
+    width: auto;
+    margin-left: 70px;
+    margin-bottom: 5px;
+}
+nav ul a:not(.btn)::after{
+    content: "";
+    background: var(--main-color);
+    height: 2px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+nav .menu-btn i{
+    color: black;
+    cursor: pointer;
+    display: none;
+
+}
+.banner .banner-text p{
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+.banner .banner-text{
+    margin: 81px 0;
+}
+.menu{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/section\ 2.png);
+    background-size: cover;
+    background-position: center;
+}
+.menu .menu-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -50px;
+}
+.menu .menu-text h3{
+    color: var(--text-color);
+    font-size: 70px;
+    margin-bottom: 15px;
+    margin-top: -20px;
+}
+.menu .menu-text p{
+    font-weight: 300;
+    color: var(--text-color);
+    text-align: center;
+}
+.menu-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1px;
+    text-align: center;
+}
+.menu-content img{
+    height: 190px;
+    width: auto;
+    border-radius: 50%;
+    margin-top: 100px;
+    border: 4px solid var(--main-color);
+}
+.menu-content h4{
+    color: var(--text-color);
+    font-size: 30px;
+    margin-top: 20px;
+}
+.menu-content p{
+    font-weight: 300;
+    text-align: center;
+}
+.menu-content h5{
+    color: var(--main-color);
+    font-weight: 700;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+.estatistica{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/section\ 4.png);
+    background-size: cover;
+    background-position: center;
+}
+.estatistica-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.estatistica-text h3{
+    color: var(--text-color);
+    font-size: 70px;
+    margin-bottom: 14px;
+}
+.estatistica-text p{
+    color: var(--text-color);
+    font-weight: 300;
+    text-align: center;
+}
+.estatistica-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 190px;
+    width: auto;
+    margin-top: 100px;
+}
+.estatistica-content img{
+    height: 200px;
+    width: auto;
+}
+.estatistica-content h4{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 55px;
+}
+.estatistica-content h5{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 40px;
+}
+.estatistica-content h4{
+    margin-top: -164px;
+}
+.dicas{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/section\ 6.png);
+    background-size: cover;
+    background-position: center;
+}
+.dicas-text{
+    color: var(--text-color);
+    text-align: center;
+    justify-content: center;
+}
+
+.dicas-text p{
+    text-align: justify;
+    justify-content: center;
+    margin: 200px;
+    line-height: 2;
+}
+.dicas-text h4{
+    color: var(--text-color);
+    font-size: 20px;
+    margin-top: -200px;
+    margin-right: 203px;
+    text-align: right;
+}
+.newsletter{
+    background-color: #222222;
+}
+.newsletter .box-newsletter{
+    text-align: center;
+    background-image: url('../assets/section 4.png');
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.newsletter .box-newsletter h2{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+.newsletter .box-newsletter p{
+    margin: 13px;
+}
+.newsletter .box-newsletter input{
+    width: 30%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+.newsletter .box-newsletter button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 30px;
+    color: var(--bg-color);
+    font-weight: 700;
+    background: var(--main-color);
+    cursor: pointer;
+}
+footer{
+    background-color: var(--text-color);
+}
+footer .container{
+    display: flex;
+    color: black;
+}
+footer .container img{
+    margin-top: -12px;
+    height: 70px;
+    width: auto;
+}
+footer .container ul{
+    width: 25%;
+}
+footer .container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+footer .container .rede-sociais img{
+    margin-right: 10px;
+    height: 30px;
+    width: auto;
+}
+footer .container ul > p{
+    margin-bottom: 40px;
+    color: black;
+    font-size: 12px;
+}
+footer .container li{
+    margin: 10px 0;
+}
+footer .container a{
+    color: black;
+}
+footer .container li > p{
+    color: black;
+    font-weight: 600;
+}
+
+/* Parte responsiva */
+@media (max-width: 920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: var(--text-color);
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0,3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul a{
+        width: 100%;
+        margin: 50px 0;
+    }
+}
+@media (max-width: 960px){
+    .newsletter .box-newsletter h2{
+        font-size: 2rem;
+    }
+    .newsletter .box-newsletter input{
+        width: 90%;
+    }
+    .newsletter .box-newsletter{
+        padding: 50px;
+    }
+    .newsletter .box-newsletter button{
+        width: 50%;
+        margin-top: 20px;
+    }
+}
